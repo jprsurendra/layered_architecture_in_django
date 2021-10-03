@@ -6,6 +6,9 @@ backup_folder/
 **/migrations/**
 !**/migrations
 !**/migrations/__init__.py
+local_settings.py
+
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
