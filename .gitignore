@@ -7,6 +7,8 @@ backup_folder/
 !**/migrations
 !**/migrations/__init__.py
 local_settings.py
+project/local_settings.py
+project/project/local_settings.py
 
 
 

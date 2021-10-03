@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '91661ww4#of%%gm)td6gy986ycg8l!ml%xqmo-b_9=sk6q4vzg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -51,12 +51,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'project.urls'
-
+TEMPLATE_PATH = (BASE_DIR + '/templates/')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [TEMPLATE_PATH],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,7 +120,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
 try:
     from .local_settings import *
+    from .logger_config import *
+    # from .constants import *
+    # from .email_config import *
+    # from .application_config import *
 except ImportError:
     pass

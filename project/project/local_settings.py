@@ -1,6 +1,7 @@
 # import os
 # from django.utils.translation import ugettext_lazy as _
-# DEBUG = True
+
+DEBUG = True
 # LOCAL_BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 USE_I18N = True
@@ -15,7 +16,7 @@ DATABASES = {
             'charset': 'utf8'
         },
         'USER': 'root',
-        'PASSWORD': '*******',
+        'PASSWORD': 'Jiffy@123',
         'HOST': 'localhost',
         'PORT': '3306',
     }
