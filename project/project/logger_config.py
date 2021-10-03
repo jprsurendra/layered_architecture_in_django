@@ -1,5 +1,5 @@
 '''
-JS logger configuration used in application
+Application logger configuration used in application
 '''
 
 import datetime
@@ -24,7 +24,7 @@ LOGGING = {
         # 'default': {
         #     'level':'DEBUG',
         #     'class':'logging.handlers.RotatingFileHandler',
-        #     'filename': 'logs/jiffyshiplog.log',
+        #     'filename': 'logs/project_log.log',
         #     'maxBytes': 1024*1024*5, # 5 MB
         #     'backupCount': 5,
         #     'formatter':'standard',
@@ -33,7 +33,7 @@ LOGGING = {
             'level':'DEBUG',
             'class':'logging.handlers.TimedRotatingFileHandler',
             'filename': 'logs/project_log.log',
-            'when': 'midnight', # this specifies the interval   jiffyshiplog.log
+            'when': 'midnight', # this specifies the interval
             'interval': 1, # defaults to 1, only necessary for other values
             #'backupCount': 10, # how many backup file to keep, 10 days
             'formatter':'standard', #'verbose',
