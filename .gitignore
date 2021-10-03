@@ -1,7 +1,11 @@
 project/.idea/ 
 .idea/ 
 backup_folder/
-
+**/migrations/
+**/**/migrations
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
