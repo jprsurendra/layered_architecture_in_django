@@ -54,7 +54,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     'middleware.custom_middleware.CustomMainMiddleware' # Custom Middleware for current project
-
 ]
 
 ROOT_URLCONF = 'project.urls'
