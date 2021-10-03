@@ -126,7 +126,7 @@ STATIC_URL = '/static/'
 
 try:
     from .local_settings import *
-    from .logger_config import *
+    from project.config.logger_config import *
     # from .constants import *
     # from .email_config import *
     # from .application_config import *
