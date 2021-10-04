@@ -15,8 +15,11 @@ def error_404(request):
 
 def load_on_startup():
 	try:
-		print("Something....")
-		raise Exception("This is a sample Exception!")
+		# print("Something....")
+		# raise Exception("This is a sample Exception!")
+
+		from apis.components.factories.managers_factory import ManagersFactory
+		ManagersFactory.get_instance().register_all_managers()
 	except Exception as e:
 		logging.info("Path: project/views.py Source: load_on_startup() Error: %s", str(e))
 		logging.info(traceback.format_exc())
