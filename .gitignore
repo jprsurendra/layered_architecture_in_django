@@ -1,6 +1,7 @@
 project/.idea/ 
 .idea/ 
 backup_folder/
+logs/
 **/migrations/
 **/**/migrations
 **/migrations/**
